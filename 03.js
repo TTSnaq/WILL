@@ -14,7 +14,12 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  for (i=0 ; i<amigos.length ; i++){
+    for (let propiety in amigos[i]){
+      amigos[i].nombre = nombre;
+    }
+    return amigos[i];
+  } 
 }
 
 // No modifiques nada debajo de esta linea //
